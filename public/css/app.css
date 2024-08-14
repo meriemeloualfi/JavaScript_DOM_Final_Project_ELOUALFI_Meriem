@@ -11845,5 +11845,217 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Amatic SC";
+  src: url(../font/Amatic_SC/AmaticSC-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../font/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1, .logo .h1 {
+  font-size: 31px;
+  padding-right: 180px;
+}
+.logo a {
+  color: #37373f;
+  text-decoration: none;
+  font-family: "Roboto";
+}
+.logo a span {
+  color: #ce1212;
+  font-size: 30px;
+}
+
+.links ul {
+  display: flex;
+  margin-top: 13px;
+  gap: 30px;
+  padding-right: 100px;
+}
+.links li {
+  list-style: none;
+}
+.links li select {
+  border: none;
+  background-color: transparent;
+  color: #7f7f90;
+}
+.links a {
+  text-decoration: none;
+  color: #7f7f90;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  padding-bottom: 6px;
+}
+.links a:hover {
+  color: #4e4e59;
+  border-bottom: 2px solid #ce1212;
+}
+.links .active {
+  color: #4e4e59;
+  border-bottom: 2px solid #ce1212;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 5px;
+  padding-left: 50px;
+}
+.contact-btn button {
+  background: #ce1212;
+  padding: 6px 32px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Inter";
+}
+.contact-btn button:hover {
+  background-color: #fa3434;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-content form label {
+  margin-bottom: 5px;
+}
+.modal-content form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.modal-content form button {
+  padding: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.modal-content form button:hover {
+  background-color: #ff7878;
+}
+
+@media screen and (max-width: 428px) {
+  nav {
+    justify-content: space-between;
+    width: 427px;
+  }
+  nav #menu-toggle {
+    display: flex;
+  }
+  nav .links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: none;
+  }
+  nav .links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  nav .links a {
+    color: black;
+  }
+  nav .links a:hover {
+    color: #ffb03b;
+  }
+  nav .menu-icon {
+    display: none;
+  }
+  nav .menu-icon {
+    display: flex;
+  }
+  nav #menu-toggle:checked ~ .links {
+    display: flex;
+  }
+  nav #menu-toggle {
+    display: none;
+  }
+  nav .menu-icon {
+    display: flex;
+    color: white;
+  }
+  nav .menu-icon #menu-toggle {
+    display: none;
+  }
+  nav .menu-icon label {
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
