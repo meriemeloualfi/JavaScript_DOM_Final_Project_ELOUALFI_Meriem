@@ -1,0 +1,44 @@
+.menu-title
+    padding-bottom: 10px
+.menu
+    display: flex
+    flex-direction: column
+    gap: 4vh
+    margin-bottom: 50px
+    p
+        text-align: center
+        color: rgb(151, 155, 155)
+    .title
+        text-align: center
+        font-family: "Amatic SC"
+        font-weight: 700
+        color: #ce1212
+    .btn
+        display: flex
+        justify-content: center
+        gap: 2vw
+        button
+            border: none
+            background: transparent
+            position: relative 
+            &::after
+                content: ""
+                position: absolute
+                width: 0
+                height: 2px
+                background-color: rgb(213, 53, 53)
+                bottom: 0
+                left: 0
+                transition:  0.3s ease
+            &:hover::after
+                width: 100%
+    .smalldiv
+        h2
+            color: rgb(213, 53, 53)
+    .topDiv
+        display: flex
+        justify-content: space-evenly
+        .content
+            text-align: center
+
+    

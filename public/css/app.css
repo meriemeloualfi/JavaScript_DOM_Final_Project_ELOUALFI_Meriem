@@ -11873,11 +11873,17 @@ nav {
   z-index: 9999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-nav #menu-toggle {
+
+#menu-toggle {
   display: none;
 }
-nav .menu-icon {
+
+.menu-icon {
   display: none;
+  cursor: pointer;
+  font-size: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
 }
 
 .logo h1, .logo .h1 {
@@ -11925,14 +11931,14 @@ nav .menu-icon {
   border-bottom: 2px solid #ce1212;
 }
 
-.contact-btn {
+.login-btn {
   display: flex;
   align-items: center;
   justify-self: center;
   gap: 5px;
   padding-left: 50px;
 }
-.contact-btn button {
+.login-btn button {
   background: #ce1212;
   padding: 6px 32px;
   border-radius: 50px;
@@ -11944,7 +11950,7 @@ nav .menu-icon {
   font-size: 14px;
   font-family: "Inter";
 }
-.contact-btn button:hover {
+.login-btn button:hover {
   background-color: #fa3434;
 }
 
@@ -12013,6 +12019,42 @@ nav .menu-icon {
   background-color: #e23333;
 }
 
+@media screen and (max-width: 428px) {
+  .logo h1, .logo .h1 {
+    padding-right: 38px;
+  }
+  .login-btn {
+    padding-left: 30px;
+  }
+  .menu-icon {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .links ul {
+    flex-direction: column;
+    margin-top: 0;
+    padding: 0;
+    gap: 20px;
+  }
+  #menu-toggle:checked ~ .links {
+    display: flex;
+  }
+  .contact-btn {
+    padding-left: 0;
+  }
+}
 @keyframes up-down {
   0% {
     transform: translateY(0);
@@ -12306,6 +12348,60 @@ nav .menu-icon {
     padding-right: 60px;
   }
 }
+.menu-title {
+  padding-bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  margin-bottom: 50px;
+}
+.menu p {
+  text-align: center;
+  color: rgb(151, 155, 155);
+}
+.menu .title {
+  text-align: center;
+  font-family: "Amatic SC";
+  font-weight: 700;
+  color: #ce1212;
+}
+.menu .btn {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+.menu .btn button {
+  border: none;
+  background: transparent;
+  position: relative;
+}
+.menu .btn button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: rgb(213, 53, 53);
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+.menu .btn button:hover::after {
+  width: 100%;
+}
+.menu .smalldiv h2, .menu .smalldiv .h2 {
+  color: rgb(213, 53, 53);
+}
+.menu .topDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu .topDiv .content {
+  text-align: center;
+}
+
 .chefs {
   padding-bottom: 30px;
 }
