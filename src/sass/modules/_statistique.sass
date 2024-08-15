@@ -1,0 +1,41 @@
+
+.statistique
+    background-image: url(../images/stats-bg.jpg) 
+    background-position: center 
+    background-size: cover
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background: rgba(0,0 ,0 ,0.5)
+    div
+        color: #fff
+        z-index: 1000
+        padding-top: 130px
+        padding-bottom: 130px
+        padding-left: 100px
+        padding-right: 100px
+        .p1
+            font-weight: bold
+            font-size: 48px
+            margin: 0
+        .p2
+            margin: 0
+            color: #ffffff9f
+            font-weight: bold
+
+@media screen and (max-width: 428px)
+    .statistique
+        flex-direction: column
+        div
+            padding-top: 60px
+            padding-bottom: 60px
+            padding-left: 60px
+            padding-right: 60px
