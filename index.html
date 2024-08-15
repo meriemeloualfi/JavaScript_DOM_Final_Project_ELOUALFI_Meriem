@@ -12,47 +12,47 @@
 
 <body>
 
-    <!--start nav-->
-    <nav class="fixed-top">
-        <!-- <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="bi bi-list menu-icon" ></label> -->
-        <div class="logo">
-            <h1>
-                <a href="./index.html">
-                    Yummy<span>.</span>
-                </a>
-            </h1>
+   <!--start nav-->
+   <nav class="fixed-top">
+    <!-- <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="bi bi-list menu-icon" ></label> -->
+    <div class="logo">
+        <h1>
+            <a href="./index.html">
+                Yummy<span>.</span>
+            </a>
+        </h1>
+    </div>
+    <div class="links">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#event">Events</a></li>
+            <li><a href="#chef">Chefs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#">Drop down</a><select name="" id=""></select></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="contact-btn">
+        <button id="loginBtn">Login</button>
+    </div>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Login</button>
+            </form>
         </div>
-        <div class="links">
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#event">Events</a></li>
-                <li><a href="#chef">Chefs</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#">Drop down</a><select name="" id=""></select></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="contact-btn">
-            <button id="loginBtn">Login</button>
-        </div>
-        <div id="loginModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Login</h2>
-                <form>
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
-                    <button type="submit">Login</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-    <!--end nav-->
+    </div>
+</nav>
+<!--end nav-->
     <!--start hero section-->
     <section id="hero" class="hero section light-background">
         <div class="container">
@@ -209,61 +209,150 @@
         </div>
     </section>
     <!--end menu-->
+    <!--start testimonials-->
+    <section class="testimonials">
+        <div class="section-title">
+            <h2>testimonials<br></h2>
+            <p><span>what are they</span> <span class="dscp">saying about us</span></p>
+        </div>
+        <div id="carousel1" class="carousel-container" autoslide="on">
+            <div class="carousel">
+                <div class="slide">
+                    <div class="content">
+                        
+                          <i class="bi bi-quote icon1"></i>
+                          <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+                          <i class="bi bi-quote icon2"></i>
+                        
+                        <h3>Saul Goodman</h3>
+                        <h4>Ceo & Founder</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    <div class="profil">
+                        <img src="./public/images/testimonials/testimonials-1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        
+                          <i class="bi bi-quote icon1"></i>
+                          <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+                          <i class="bi bi-quote icon2"></i>
+                        
+                        <h3>ara Wilsson</h3>
+                        <h4>Designer</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    <div class="profil">
+                        <img src="./public/images/testimonials/testimonials-2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        
+                          <i class="bi bi-quote icon1"></i>
+                          <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+                          <i class="bi bi-quote icon2"></i>
+                        
+                        <h3>Jena Karlis</h3>
+                        <h4>Store Owner</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    <div class="profil">
+                        <img src="./public/images/testimonials/testimonials-3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        
+                          <i class="bi bi-quote icon1"></i>
+                          <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+                          <i class="bi bi-quote icon2"></i>
+                        
+                        <h3>John Larson</h3>
+                        <h4>Entrepreneur</h4>
+                        <div class="stars">
+                          <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    <div class="profil">
+                        <img src="./public/images/testimonials/testimonials-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <button carouselBtn="carousel1" class="previous">Previous</button>
+            <button carouselBtn="carousel1" class="next">Next</button>
+        </div>
+    </section>
+    <!--end testimonials-->
     <!--start chef-->
     <section id="chefs" class="chefs">
         <div class="container section-title">
-          <h2>chefs</h2>
-          <p><span>Our</span> <span class="dscp">Proffesional Chefs</span></p>
+            <h2>chefs</h2>
+            <p><span>Our</span> <span class="dscp">Proffesional Chefs</span></p>
         </div>
         <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-4 d-flex" >
-              <div class="member">
-                <div class="member-img">
-                  <img src="./public/images/chefs/chefs-1.jpg" class="img-fluid" alt="">
-                  <div class="shape">
-                  <img src="./public/images/team-shape.svg">
+            <div class="row gy-4">
+                <div class="col-lg-4 d-flex">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="./public/images/chefs/chefs-1.jpg" class="img-fluid" alt="">
+                            <div class="shape">
+                                <img src="./public/images/team-shape.svg">
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Master Chef</span>
+                            <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum
+                                exercitationem iure minima enim corporis et voluptate.</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-lg-4 d-flex">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="./public/images/chefs/chefs-2.jpg" class="img-fluid" alt="">
+                            <div class="shape">
+                                <img src="./public/images/team-shape.svg">
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Sarah Jhonson</h4>
+                            <span>Patissier</span>
+                            <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit
+                                corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="member-info">
-                  <h4>Walter White</h4>
-                  <span>Master Chef</span>
-                  <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+
+                <div class="col-lg-4 d-flex">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="./public/images/chefs/chefs-3.jpg" class="img-fluid" alt="">
+                            <div class="shape">
+                                <img src="./public/images/team-shape.svg">
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>William Anderson</h4>
+                            <span>Cook</span>
+                            <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates
+                                enim aut architecto porro aspernatur molestiae modi.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-lg-4 d-flex">
-              <div class="member">
-                <div class="member-img">
-                  <img src="./public/images/chefs/chefs-2.jpg" class="img-fluid" alt="">
-                  <div class="shape">
-                    <img src="./public/images/team-shape.svg">
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Patissier</span>
-                  <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
-                </div>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 d-flex">
-              <div class="member">
-                <div class="member-img">
-                  <img src="./public/images/chefs/chefs-3.jpg" class="img-fluid" alt="">
-                  <div class="shape">
-                    <img src="./public/images/team-shape.svg">
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>William Anderson</h4>
-                  <span>Cook</span>
-                  <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
     </section>
     <!--end chef-->

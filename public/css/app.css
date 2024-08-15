@@ -12292,6 +12292,7 @@ nav .menu-icon {
   margin: 0;
   color: rgba(255, 255, 255, 0.6235294118);
   font-weight: bold;
+  text-align: center;
 }
 
 @media screen and (max-width: 428px) {
@@ -12306,7 +12307,6 @@ nav .menu-icon {
   }
 }
 .chefs {
-  background-color: #f2f2f2;
   padding-bottom: 30px;
 }
 .chefs .member {
@@ -12343,11 +12343,120 @@ nav .menu-icon {
   position: absolute;
   left: 0;
   bottom: 0;
-  z-index: 2000;
+  z-index: 99;
 }
 .chefs .member:hover {
   transform: scale(1.08);
   transition: 0.3s;
+}
+
+.testimonials {
+  background-color: #f2f2f2;
+  padding-bottom: 20px;
+}
+.testimonials .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 250px;
+}
+.testimonials .slide .content {
+  width: 70%;
+  border-left: 3px solid #ce1212;
+  padding-left: 25px;
+}
+.testimonials .slide .content p {
+  font-style: italic;
+  margin: 0;
+}
+.testimonials .slide .content h3, .testimonials .slide .content .h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Amatic SC";
+}
+.testimonials .slide .content h4, .testimonials .slide .content .h4 {
+  font-size: 14px;
+  font-family: "Amatic SC";
+}
+.testimonials .slide .content .stars i {
+  color: #ffc107;
+}
+.testimonials .slide .content i {
+  color: #e08282;
+}
+.testimonials .slide .content .icon1 {
+  left: -5px;
+  margin: 0;
+}
+.testimonials .slide .content .icon2 {
+  display: inline-block;
+  right: -1px;
+  top: 3px;
+  transform: scale(-1, -1);
+  margin: 0;
+}
+.testimonials .profil img {
+  border-radius: 50%;
+  width: 150px;
+  margin: auto;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-container button {
+  display: none;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  margin-bottom: 100px;
+}
+
+.slide {
+  min-width: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.next, .previous {
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0px;
+}
+
+.previous {
+  left: 0;
+}
+
+.indicators-grp {
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  padding: 0.3vh 1vw;
+  background: #d3d4d4;
+  border-radius: 10px;
+}
+
+.activeIndicator {
+  background-color: #ce1212;
 }
 
 /*# sourceMappingURL=app.css.map */
