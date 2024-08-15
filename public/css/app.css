@@ -12459,4 +12459,41 @@ nav .menu-icon {
   background-color: #ce1212;
 }
 
+@media screen and (max-width: 428px) {
+  .testimonials {
+    padding-bottom: 10px;
+  }
+  .testimonials .slide {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .testimonials .content {
+    width: 100%;
+  }
+  .testimonials .content h3, .testimonials .content .h3 {
+    font-size: 16px;
+  }
+  .testimonials .content h4, .testimonials .content .h4 {
+    font-size: 12px;
+  }
+  .testimonials .content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .testimonials .content .icon1, .testimonials .content .icon2 {
+    font-size: 18px;
+  }
+  .testimonials .profil img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  .indicators-grp {
+    bottom: 5%;
+    gap: 5px;
+  }
+  .indicator {
+    padding: 0.3vh 2vw;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
