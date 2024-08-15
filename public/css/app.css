@@ -12186,11 +12186,10 @@ nav .menu-icon {
   transform: translate(-50%, -50%);
 }
 
-.section {
+.why-us {
   background-color: #f2f2f2;
   padding: 50px 0;
 }
-
 .why-us .why-box {
   color: #fff;
   background-color: #ce1212;
@@ -12305,6 +12304,50 @@ nav .menu-icon {
     padding-left: 60px;
     padding-right: 60px;
   }
+}
+.chefs {
+  background-color: #f2f2f2;
+  padding-bottom: 30px;
+}
+.chefs .member {
+  background-color: #fff;
+  box-shadow: 0px 0 27px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+}
+.chefs .member .member-info {
+  padding: 10px 15px 20px 15px;
+}
+.chefs .member .member-info h4, .chefs .member .member-info .h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-family: "Inter";
+}
+.chefs .member .member-info span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #909294;
+}
+.chefs .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  padding: 20px 0 0 0;
+  color: #636669;
+}
+.chefs .member .member-img {
+  position: relative;
+}
+.chefs .member .shape img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2000;
+}
+.chefs .member:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
 }
 
 /*# sourceMappingURL=app.css.map */
