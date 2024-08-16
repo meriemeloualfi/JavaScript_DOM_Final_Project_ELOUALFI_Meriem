@@ -11873,52 +11873,47 @@ nav {
   z-index: 9999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-.closenav {
+nav .closenav {
   display: none;
 }
-
-#menu-toggle {
+nav #menu-toggle {
   display: none;
 }
-
-.menu-icon {
+nav .menu-icon {
   display: none;
   cursor: pointer;
   font-size: 30px;
   padding-right: 30px;
   padding-top: 10px;
 }
-
-.logo h1, .logo .h1 {
+nav .logo h1, nav .logo .h1 {
   font-size: 31px;
   padding-right: 180px;
 }
-.logo a {
+nav .logo a {
   color: #37373f;
   text-decoration: none;
   font-family: "Roboto";
 }
-.logo a span {
+nav .logo a span {
   color: #ce1212;
   font-size: 30px;
 }
-
-.links ul {
+nav .links ul {
   display: flex;
   margin-top: 13px;
   gap: 30px;
   padding-right: 100px;
 }
-.links li {
+nav .links li {
   list-style: none;
 }
-.links li select {
+nav .links li select {
   border: none;
   background-color: transparent;
   color: #7f7f90;
 }
-.links a {
+nav .links a {
   text-decoration: none;
   color: #7f7f90;
   font-family: "Inter";
@@ -11926,23 +11921,22 @@ nav {
   font-size: 15px;
   padding-bottom: 6px;
 }
-.links a:hover {
+nav .links a:hover {
   color: #4e4e59;
   border-bottom: 2px solid #ce1212;
 }
-.links .active {
+nav .links .active {
   color: #4e4e59;
   border-bottom: 2px solid #ce1212;
 }
-
-.login-btn {
+nav .login-btn {
   display: flex;
   align-items: center;
   justify-self: center;
   gap: 5px;
   padding-left: 50px;
 }
-.login-btn button {
+nav .login-btn button {
   background: #ce1212;
   padding: 6px 32px;
   border-radius: 50px;
@@ -11954,11 +11948,10 @@ nav {
   font-size: 14px;
   font-family: "Inter";
 }
-.login-btn button:hover {
+nav .login-btn button:hover {
   background-color: #fa3434;
 }
-
-.modal {
+nav .modal {
   display: none;
   position: fixed;
   z-index: 1000;
@@ -11969,8 +11962,7 @@ nav {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-.modal-content {
+nav .modal-content {
   background-color: #fff;
   margin: 15% auto;
   padding: 20px;
@@ -11980,8 +11972,7 @@ nav {
   border-radius: 10px;
   position: relative;
 }
-
-.close {
+nav .close {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -11990,27 +11981,26 @@ nav {
   top: 5px;
   right: 10px;
 }
-.close:hover, .close:focus {
+nav .close:hover, nav .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
-
-.modal-content form {
+nav .modal-content form {
   display: flex;
   flex-direction: column;
 }
-.modal-content form label {
+nav .modal-content form label {
   margin-bottom: 5px;
 }
-.modal-content form input {
+nav .modal-content form input {
   margin-bottom: 15px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-.modal-content form button {
+nav .modal-content form button {
   padding: 10px;
   background-color: #ff4d4d;
   color: white;
@@ -12019,7 +12009,7 @@ nav {
   cursor: pointer;
   font-size: 16px;
 }
-.modal-content form button:hover {
+nav .modal-content form button:hover {
   background-color: #e23333;
 }
 
@@ -12030,24 +12020,24 @@ nav {
     justify-content: start;
     display: flex;
   }
-  .closenav {
+  nav .closenav {
     display: flex;
   }
-  .logo h1, .logo .h1 {
+  nav .logo h1, nav .logo .h1 {
     padding-right: 0;
     padding-left: 10px;
   }
-  .login-btn {
+  nav .login-btn {
     padding-left: 0;
     gap: 0;
   }
-  .menu-icon {
+  nav .menu-icon {
     position: absolute;
     right: 10px;
     display: block;
     padding-bottom: 10px;
   }
-  .links {
+  nav .links {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -12060,16 +12050,16 @@ nav {
     padding-bottom: 30px;
     justify-content: center;
   }
-  .links ul {
+  nav .links ul {
     flex-direction: column;
     margin-top: 0;
     padding: 0;
     gap: 20px;
   }
-  #menu-toggle:checked ~ .links {
+  nav #menu-toggle:checked ~ .links {
     display: flex;
   }
-  .contact-btn {
+  nav .contact-btn {
     padding-left: 0;
   }
 }
@@ -12124,6 +12114,7 @@ nav {
   margin-left: 25px;
   color: #212529;
   font-weight: 500;
+  text-decoration: none;
 }
 .hero .btn-video:hover {
   color: #ce1212;
@@ -12134,10 +12125,6 @@ nav {
   line-height: 0;
   margin-right: 8px;
 }
-.hero a {
-  text-decoration: none;
-}
-
 .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
@@ -12843,6 +12830,59 @@ a:hover {
   }
   .footer-bottom {
     padding-top: 20px;
+  }
+}
+.gallery {
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  padding-bottom: 5vh;
+}
+
+.slide3 img {
+  padding: 5px;
+  transition: 0.3s;
+  margin-bottom: 12vh;
+}
+.slide3 img:hover {
+  border: 4px solid #ce1212;
+}
+
+.carousel3 {
+  display: flex;
+  gap: 5px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-container3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.next3,
+.previous3 {
+  padding: 1vh 2vw;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  display: none;
+}
+
+@media (max-width: 426px) {
+  .slide3 {
+    display: flex;
+    justify-content: center;
+    min-width: 100% !important;
+    gap: 0;
+  }
+  .slide3 img {
+    min-width: 100vw;
+    padding: 0;
+  }
+  .carousel3 {
+    display: flex;
+    gap: 0;
   }
 }
 
