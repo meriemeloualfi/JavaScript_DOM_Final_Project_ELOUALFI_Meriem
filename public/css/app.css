@@ -12055,7 +12055,7 @@ nav {
     right: 0;
     background-color: white;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     padding-left: 40px;
     padding-bottom: 30px;
     justify-content: center;
@@ -12729,6 +12729,117 @@ nav {
   .btn {
     width: 100%;
     justify-content: center;
+  }
+}
+.footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h5, .h5 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.footer-top1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #36363a;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  justify-content: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  margin-top: 15px;
+}
+.social-links .social-link {
+  color: #ddd;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.social-links .social-link:hover {
+  color: #ce1212;
+}
+
+a {
+  color: #ce1212;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-top1 .icon i {
+  font-size: 25px;
+}
+
+.fixedBtn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.fixedBtn button {
+  background-color: #ce1212;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+}
+.fixedBtn button i {
+  color: #fff;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 428px) {
+  .footer-top1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-top1 .icon {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-top1 .icon i {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .social-links {
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-bottom {
+    padding-top: 20px;
   }
 }
 
