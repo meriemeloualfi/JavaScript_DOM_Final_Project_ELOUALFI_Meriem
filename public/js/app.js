@@ -1,19 +1,23 @@
 //* create modal login
-var modal = document.getElementById("loginModal");
-var btn = document.getElementById("loginBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+let modal = document.getElementById("loginModal");
+let btn = document.getElementById("loginBtn");
+let span = document.querySelector(".close");
 
-span.onclick = function() {
+
+btn.addEventListener("click", () => {
+    modal.style.display = "block";
+});
+
+span.addEventListener("click", () => {
     modal.style.display = "none";
-}
-window.onclick = function(event) {
-    if (event.target == modal) {
+});
+
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
         modal.style.display = "none";
     }
-}
+});
+
 //* add glightbox for videos and photos
 document.addEventListener('DOMContentLoaded', function() {
     const lightbox = GLightbox({

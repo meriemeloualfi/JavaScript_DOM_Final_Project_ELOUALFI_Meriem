@@ -12748,7 +12748,6 @@ h5, .h5 {
 }
 
 p {
-  font-size: 13px;
   margin-bottom: 10px;
 }
 
@@ -12765,6 +12764,10 @@ p {
   flex: 1;
   min-width: 200px;
   margin-bottom: 20px;
+}
+.footer-info p {
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .footer-bottom {
